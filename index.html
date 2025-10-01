@@ -1,90 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <title>Pages légales – TrendBot</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <title>TrendBot - Pages légales</title>
   <style>
-    :root {
-      --brand: #0d6efd;
-      --bg: #f9fafc;
-      --text: #333;
-      --muted: #666;
-      --card: #ffffff;
-      --shadow: 0 4px 10px rgba(0,0,0,0.08);
-      --radius: 12px;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; font-family: "Segoe UI", Roboto, Arial, sans-serif;
-      color: var(--text); background: var(--bg);
-    }
-    header {
-      background: linear-gradient(120deg, var(--brand), #4da3ff);
-      color: #fff; padding: 28px 20px; text-align: center;
-    }
-    header h1 { margin: 0; font-size: 28px; }
-    header p { margin: 8px 0 0; opacity: .95; }
-    main {
-      max-width: 900px; margin: 40px auto; padding: 0 16px;
-    }
-    .panel {
-      background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow);
-      padding: 28px; margin-bottom: 22px;
-    }
-    .panel h2 { margin: 0 0 12px; color: var(--brand); font-size: 22px; }
-    .links { list-style: none; padding: 0; margin: 14px 0 0; }
-    .links li { margin: 10px 0; }
-    .link-card {
-      display: block; background: #f6f9ff; border: 1px solid #e2ecff;
-      padding: 14px 16px; border-radius: 10px; text-decoration: none;
-      color: var(--text); transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
-    }
-    .link-card strong { color: var(--brand); }
-    .link-card:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 8px 18px rgba(13, 110, 253, .12);
-      border-color: #cfe1ff;
-    }
-    .muted { color: var(--muted); font-size: 14px; margin-top: 2px; }
-    footer {
-      text-align: center; color: var(--muted);
-      padding: 24px 16px 40px; font-size: 14px;
-    }
-    @media (max-width: 480px) {
-      header h1 { font-size: 22px; }
-      .panel { padding: 20px; }
-    }
+    body {font-family: "Segoe UI", Roboto, Arial, sans-serif; margin: 40px; background: #f9fafc;}
+    h1 {color: #0d6efd;}
+    ul {list-style: none; padding: 0;}
+    li {margin: 10px 0;}
+    a {color: #0d6efd; text-decoration: none; font-size: 18px;}
+    a:hover {text-decoration: underline;}
   </style>
 </head>
 <body>
-  <header>
-    <h1>trendbot-legal</h1>
-    <p>Pages légales TrendBot</p>
-  </header>
-
-  <main>
-    <section class="panel">
-      <h2>Documents</h2>
-      <ul class="links">
-        <li>
-          <a class="link-card" href="terms.html">
-            <strong>Conditions d’utilisation</strong>
-            <div class="muted">Règles d’utilisation du service TrendBot.</div>
-          </a>
-        </li>
-        <li>
-          <a class="link-card" href="privacy.html">
-            <strong>Politique de confidentialité</strong>
-            <div class="muted">Comment vos données sont collectées et protégées.</div>
-          </a>
-        </li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    © 2025 TrendBot — Tous droits réservés
-  </footer>
+  <h1>Pages légales TrendBot</h1>
+  <ul>
+    <li><a href="./terms/">Conditions d’utilisation</a></li>
+    <li><a href="./privacy/">Politique de confidentialité</a></li>
+  </ul>
 </body>
 </html>
