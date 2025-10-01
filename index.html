@@ -1,78 +1,90 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>TrendBot – Mentions légales</title>
+  <meta charset="UTF-8" />
+  <title>Pages légales – TrendBot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
+    :root {
+      --brand: #0d6efd;
+      --bg: #f9fafc;
+      --text: #333;
+      --muted: #666;
+      --card: #ffffff;
+      --shadow: 0 4px 10px rgba(0,0,0,0.08);
+      --radius: 12px;
+    }
+    * { box-sizing: border-box; }
     body {
-      font-family: "Segoe UI", Roboto, Arial, sans-serif;
-      background: #f9fafc;
-      color: #333;
-      margin: 0;
-      padding: 0;
+      margin: 0; font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text); background: var(--bg);
     }
     header {
-      background: #0d6efd;
-      color: white;
-      padding: 20px;
-      text-align: center;
+      background: linear-gradient(120deg, var(--brand), #4da3ff);
+      color: #fff; padding: 28px 20px; text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 26px;
-    }
+    header h1 { margin: 0; font-size: 28px; }
+    header p { margin: 8px 0 0; opacity: .95; }
     main {
-      max-width: 800px;
-      margin: 50px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 900px; margin: 40px auto; padding: 0 16px;
     }
-    main h2 {
-      margin-top: 0;
-      color: #0d6efd;
+    .panel {
+      background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow);
+      padding: 28px; margin-bottom: 22px;
     }
-    ul {
-      list-style: none;
-      padding: 0;
+    .panel h2 { margin: 0 0 12px; color: var(--brand); font-size: 22px; }
+    .links { list-style: none; padding: 0; margin: 14px 0 0; }
+    .links li { margin: 10px 0; }
+    .link-card {
+      display: block; background: #f6f9ff; border: 1px solid #e2ecff;
+      padding: 14px 16px; border-radius: 10px; text-decoration: none;
+      color: var(--text); transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
     }
-    li {
-      margin: 10px 0;
+    .link-card strong { color: var(--brand); }
+    .link-card:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px rgba(13, 110, 253, .12);
+      border-color: #cfe1ff;
     }
-    a {
-      color: #0d6efd;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+    .muted { color: var(--muted); font-size: 14px; margin-top: 2px; }
     footer {
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      color: #666;
-      margin-top: 40px;
+      text-align: center; color: var(--muted);
+      padding: 24px 16px 40px; font-size: 14px;
+    }
+    @media (max-width: 480px) {
+      header h1 { font-size: 22px; }
+      .panel { padding: 20px; }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>TrendBot – Mentions légales</h1>
+    <h1>trendbot-legal</h1>
+    <p>Pages légales TrendBot</p>
   </header>
 
   <main>
-    <h2>Pages légales</h2>
-    <p>Consultez ci-dessous nos conditions et notre politique :</p>
-    <ul>
-      <li><a href="terms.html">📄 Conditions d’utilisation</a></li>
-      <li><a href="privacy.html">🔒 Politique de confidentialité</a></li>
-    </ul>
+    <section class="panel">
+      <h2>Documents</h2>
+      <ul class="links">
+        <li>
+          <a class="link-card" href="terms.html">
+            <strong>Conditions d’utilisation</strong>
+            <div class="muted">Règles d’utilisation du service TrendBot.</div>
+          </a>
+        </li>
+        <li>
+          <a class="link-card" href="privacy.html">
+            <strong>Politique de confidentialité</strong>
+            <div class="muted">Comment vos données sont collectées et protégées.</div>
+          </a>
+        </li>
+      </ul>
+    </section>
   </main>
 
   <footer>
-    © 2025 TrendBot - Tous droits réservés
+    © 2025 TrendBot — Tous droits réservés
   </footer>
 </body>
 </html>
