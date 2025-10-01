@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://fartekdz.github.io/trendbot-legal/sitemap.xml
+
 
